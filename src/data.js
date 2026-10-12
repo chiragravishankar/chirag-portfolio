@@ -135,7 +135,7 @@ export const SPEAKING = [
     title: "Conference Speaker & Hackathon Judge",
     description:
       "Keynotes and judging panels at global Web3 conferences including EthBangkok, EthVietnam, EthSafari (Kenya), and EthIndia.",
-    tint: "#ffe3ec",
+    tint: "#ffe0d1",
   },
   {
     emoji: "🧭",
@@ -143,7 +143,7 @@ export const SPEAKING = [
     title: "Startup Growth Advisor",
     description:
       "Advising two venture-backed startups, including Epoch Protocol, on go-to-market, community building, and growth strategy.",
-    tint: "#e2f0ff",
+    tint: "#dcf1e6",
   },
   {
     emoji: "🎪",
@@ -151,7 +151,7 @@ export const SPEAKING = [
     title: "Event Builder",
     description:
       "Organized and hosted major ecosystem events including EthMumbai and Founder House at EthIndia, bringing together builders, founders, and investors.",
-    tint: "#fff3d6",
+    tint: "#ffefc4",
   },
 ];
 

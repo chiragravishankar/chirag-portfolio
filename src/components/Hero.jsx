@@ -8,9 +8,6 @@ import {
   TelegramIcon,
   InstagramIcon,
   FolderIcon,
-  MegaphoneIcon,
-  UsersIcon,
-  PaperclipIcon,
 } from "../icons";
 
 const DOCK = [
@@ -53,40 +50,31 @@ export default function Hero() {
         <span className="cloud cloud--1" />
         <span className="cloud cloud--2" />
         <span className="cloud cloud--3" />
+        <span className="sun" />
         <span className="stars" />
       </div>
 
-      {/* Center title */}
+      {/* Title */}
       <div className="hero__title">
-        <div className="hello">
-          Hi, I am
-          <svg viewBox="0 0 120 10" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M2 7 C 30 2, 70 2, 118 6" />
-          </svg>
-        </div>
-        <div className="selection">
-          <h1 className="name">
-            <span>Chirag</span> <span>Ravishankar</span>
-          </h1>
-          <span className="selection__handle selection__handle--tr" aria-hidden="true" />
-          <span className="selection__handle selection__handle--bl" aria-hidden="true" />
-
-          <span className="tag tag--top">
-            <span className="tag__badge tag__badge--purple">
-              <MegaphoneIcon size={16} />
-            </span>
-            <span className="tag__clip"><PaperclipIcon size={14} /></span>
-            {PROFILE.roles[0]}
+        <div className="hello">Hi there, I'm</div>
+        <h1 className="name">
+          <span>Chirag</span>{" "}
+          <span className="name__last">
+            Ravishankar
+            <svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M4 14 C 60 4, 140 4, 296 10" />
+            </svg>
           </span>
-          <span className="tag tag--bottom">
-            <span className="tag__badge tag__badge--green">
-              <UsersIcon size={16} />
-            </span>
-            <span className="tag__clip"><PaperclipIcon size={14} /></span>
-            {PROFILE.roles[1]}
-          </span>
+        </h1>
+        <div className="tags">
+          <span className="tag tag--a">📣 {PROFILE.roles[0]}</span>
+          <span className="tag tag--b">🌱 {PROFILE.roles[1]}</span>
         </div>
         <p className="hero__tagline">{PROFILE.tagline}</p>
+        <div className="hero__cta">
+          <a className="button" href="#work">See my work ↓</a>
+          <a className="button button--ghost" href="#contact">Say hi</a>
+        </div>
       </div>
 
       {/* Desktop objects */}
@@ -164,7 +152,7 @@ export default function Hero() {
         </div>
       </Draggable>
 
-      <p className="hero__hint" aria-hidden="true">psst — everything here is draggable</p>
+      <p className="hero__hint" aria-hidden="true">↖ go on, drag things around</p>
       <Dock />
     </header>
   );

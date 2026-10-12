@@ -73,24 +73,25 @@ export default function Work() {
           <div className="label">Dive into my work</div>
           <h2>Where I've made impact</h2>
           <p className="lede">
-            From scaling Web3 communities to leading cross-functional marketing teams. Open a card for the full story.
+            From scaling Web3 communities to leading cross-functional marketing teams. Open any role for the full story.
           </p>
         </Reveal>
 
-        <div className="cards">
+        <div className="rows">
           {EXPERIENCE.map((e, i) => (
             <Reveal key={e.id} delay={i * 0.08}>
-              <button type="button" className="card" style={{ "--accent": e.accent }} onClick={() => setOpen(e.id)}>
-                <span className="card__top">
-                  <span className="logo-tile"><img src={e.logo} alt="" /></span>
-                  <span className="card__open" aria-hidden="true"><ArrowUpRight /></span>
+              <button type="button" className="row" style={{ "--accent": e.accent }} onClick={() => setOpen(e.id)}>
+                <span className="row__num mono">0{i + 1}</span>
+                <span className="logo-tile"><img src={e.logo} alt="" /></span>
+                <span className="row__main">
+                  <span className="row__company">{e.company}</span>
+                  <span className="row__text">{e.headline}</span>
                 </span>
-                <span className="card__company">{e.company}</span>
-                <span className="card__text">{e.headline}</span>
-                <span className="card__foot">
-                  <span className="mono">{e.period}</span>
-                  <span className="card__role">{e.role}</span>
+                <span className="row__meta">
+                  <span className="row__role">{e.role}</span>
+                  <span className="mono muted">{e.period}</span>
                 </span>
+                <span className="row__open" aria-hidden="true"><ArrowUpRight /></span>
               </button>
             </Reveal>
           ))}

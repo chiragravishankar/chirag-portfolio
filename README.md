@@ -2,7 +2,7 @@
 
 Personal portfolio site built with React + Vite, deployed on Vercel.
 
-A playful "desktop" design: macOS-style menu bar, draggable objects on a sky-gradient hero, a dock of links, and a light/dark theme toggle (follows the system setting by default).
+A playful "desktop" design in warm golden-hour colours: floating pill nav, draggable objects on a sunset hero, a side dock of links, and a light/dark (dusk) theme toggle that follows the system setting by default.
 
 ## Editing content
 

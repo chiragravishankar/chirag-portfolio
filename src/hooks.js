@@ -41,15 +41,6 @@ export function useTheme() {
   return [theme, toggle];
 }
 
-export function useClock() {
-  const [now, setNow] = useState(() => new Date());
-  useEffect(() => {
-    const id = setInterval(() => setNow(new Date()), 20_000);
-    return () => clearInterval(id);
-  }, []);
-  return now;
-}
-
 export function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
